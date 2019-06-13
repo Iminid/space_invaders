@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+}
+
+/*FONTS*/
+/*@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel|Dancing+Script|Russo+One&display=swap');*/
+@font-face {
+    font-family: 'amatic_scregular';
+    src: url('fonts/amaticsc-regular-webfont.eot');
+    src: url('fonts/amaticsc-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/amaticsc-regular-webfont.woff2') format('woff2'),
+         url('fonts/amaticsc-regular-webfont.woff') format('woff'),
+         url('fonts/amaticsc-regular-webfont.ttf') format('truetype'),
+         url('fonts/amaticsc-regular-webfont.svg#amatic_scregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fff_tusjbold';
+    src: url('fonts/fff_tusj-webfont.eot');
+    src: url('fonts/fff_tusj-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fff_tusj-webfont.woff2') format('woff2'),
+         url('fonts/fff_tusj-webfont.woff') format('woff'),
+         url('fonts/fff_tusj-webfont.ttf') format('truetype'),
+         url('fonts/fff_tusj-webfont.svg#fff_tusjbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	/*padding: 0;*/
+	margin: 0;
+    /*margin-top: 30px;*/
+    text-align: center;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+    align-items: center;
+}
+html{
+    background-color: #000;
+}
+canvas{
+    border: 2px solid #ffc433;
+}
+
+.v-header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #ffc433;
+}
+.container{
+    max-width: 960px;
+    padding-left:  1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+.fullscreen-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreen-wrap video{
+    min-width: 100%;
+    min-height: 100%;
+}
+/*.overlay{
+    widows: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #225470;
+    z-index: 1;
+    opacity: 0.85;
+}*/
+.content p{
+    font-size: 1.5rem;
+    display: block;
+    /*padding-bottom: 2rem;*/
+    font-family: 'amatic_scregular';
+    letter-spacing: 3px;
+}
+.content h1{
+    font-size: 70px;
+    margin-bottom: 0;
+    font-family: 'fff_tusjbold';
+    display: none;
+    letter-spacing: 10px;
+}
+.content{
+    z-index: 2;
+    margin: auto;
+}
+#button{
+    text-decoration: none;
+    background: #ffc433;
+    color: #626b55;
+    font-size: 1.3rem;
+    padding: 0.5rem 2rem;
+    font-family: 'amatic_scregular';
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#button:hover{
+    background: #626b55;
+    color: #ffc433;
+    /*height: 37px;
+    width: 156px;*/
+     padding-bottom: 10px;
+}
+#button a:hover{
+    margin-bottom: 30px;
+}
+#button-r{
+    text-decoration: none;
+    background: #ffc433;
+    color: #626b55;
+    font-size: 1.3rem;
+    padding: 0.5rem 2rem;
+    font-family: 'amatic_scregular';
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#button-r:hover{
+    background: #626b55;
+    color: #ffc433;
+    /*height: 37px;
+    width: 156px;*/
+     padding-bottom: 10px;
+}
+form{
+    margin-bottom: 30px;
+}
+#inputRegex{
+    width: 250px;
+    height: 35px;
+}
+.content .myname{
+    font-family: 'amatic_scregular';
+    font-size: 30px;
+    margin-top: 100px;
+    color: #ffc433;
+    position: relative;
+    left: 0px;
+    display: none;
+ }
+.content a{
+    text-decoration: none;
+}
+#logo{
+    display: none;
+    transition: transform 3s;
+}
+.rot{
+    transform: rotate(-180deg);
+}
+ 
+#check{
+    color: #DC143C;
+    font-weight: bold;
+}
+#check2{
+    color: #DC143C;
+    font-weight: bold;
+}
+#check3{
+    color: #7CFC00;
+    font-weight: bold;
+}
+#pause{
+    color: red;
+    display: none;
+    font-family: 'amatic_scregular';
+    font-size: 40px;
+     
+}
+#result{
+    /*border: 2px solid #ffc433;*/
+    background-color: #000000;
+    color: #ffc433;
+    font-family: 'amatic_scregular';
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+}
+#result ul{
+    list-style: none;
+}
+
+#all-result{
+    background-color: #000000;
+    color: #ffc433;
+    font-family: 'amatic_scregular';
+    font-size: 50px;
+}
+.all-result{
+    background-color: #000000;
+    color: #ffc433;
+    font-family: 'amatic_scregular';
+    font-size: 50px;
+}
+table{
+    color: green;
+    margin: auto;
+}
+.missiles{
+    background-image: url('img/rocket2.png');
+    width: 12px;
+    height: 48px;
+    position: absolute;
+    z-index: 100;
+}
+
+@media(max-width){
+    .container{
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+
+
+/
